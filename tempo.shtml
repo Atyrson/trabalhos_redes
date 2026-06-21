@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Prático de SSI - FRC</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f6f9; color: #333; }
+        .container { background: white; padding: 30px; display: inline-block; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #3182ce; }
+        h1 { color: #1a365d; margin-bottom: 5px; }
+        p { color: #4a5568; }
+        .data-box { font-size: 1.4em; font-weight: bold; color: #dd6b20; background: #fffaf0; padding: 12px 25px; border-radius: 4px; display: inline-block; margin-top: 15px; border: 1px solid #feebc8; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mecanismo Server Side Includes (SSI)</h1>
+        <p>Se a data e a hora aparecerem abaixo, a tag foi interpretada nativamente pelo Apache no servidor:</p>
+        
+        <div class="data-box"><!--#echo var="DATE_LOCAL" --></div>
+    </div>
+
+</body>
+</html>
